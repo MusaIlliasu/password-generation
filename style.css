@@ -1,0 +1,102 @@
+* {box-sizing: border-box;scroll-behavior: smooth;}
+html, body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: slateblue;
+}
+
+form {
+    width: 400px;
+    min-height: 300px;
+    border-radius: 6px;
+    background-color: darkslateblue;
+    padding: 20px;
+}
+
+form h2 {
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    
+}
+
+form .display {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.display span {
+    border: 0;
+    padding: 6px 8px;
+    border-radius: 4px;
+    background-color: slateblue;
+    color: white;
+    transition: transform 0.2s ease;
+    user-select: none;
+    cursor: pointer;
+}
+
+.display span:active, 
+form input[type="submit"]:active {transform: scale(0.9);}
+
+.form_group {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form_group label {
+    color: white;
+    font-size: 1.2rem;
+}
+.form_group input[type="number"] {
+    width: 50px;
+    height: 24px;
+    padding: 4px;
+    border: 0;
+    border-radius: 2px;
+    outline: none;
+}
+.form_group input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    border: 0;
+    font-size: 1.2rem;
+    background-color: slateblue;
+    color: white;
+    padding: 8px 14px;
+    transition: transform 0.2s ease;
+}
+
+.toast {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: max-content;
+    padding: 10px;
+    box-shadow: 0 0 2px slategray;
+    border-radius: 4px;
+    background-color: white;
+    color: slateblue;
+    z-index: 10;
+    transform: translateX(200%);
+    visibility: hidden;
+    transition: transform 0.4s ease;
+}
